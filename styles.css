@@ -106,10 +106,12 @@ header {
   border-radius: 10%;
   padding: 0.8rem 1.2rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero-section {
-  margin: 9.8rem 0;
+  margin-top: 9.8rem;
+  padding-bottom: 9.6rem;
 }
 
 .hero-title {
@@ -134,4 +136,63 @@ header {
   border-radius: 10%;
   cursor: pointer;
   margin-bottom: 3rem;
+  text-decoration: none;
+}
+
+.statistics-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 4.8rem;
+  padding-bottom: 9.6rem;
+}
+
+.stat-1 {
+  padding-left: 27.4rem;
+  position: relative;
+}
+
+.stat-1[data-icon="people-icon"]::before {
+  content: "";
+  background-image: url(./images/icon-communities.svg);
+  width: 47px;
+  height: 41px;
+  position: absolute;
+  top: -32px;
+  left: 277px;
+}
+
+.stat-2 {
+  padding-left: 15rem;
+  position: relative;
+}
+
+.stat-2[data-icon="message-icon"]::before {
+  content: "";
+  background-image: url(./images/icon-messages.svg);
+  width: 48px;
+  height: 40px;
+  position: absolute;
+  top: -32px;
+  left: 154px;
+}
+
+.numbers {
+  color: hsl(192, 100%, 9%);
+  font-size: 9.6rem;
+  font-weight: 700;
+}
+
+.stat-description-1,
+.stat-description-2 {
+  font-size: 2.2rem;
+  color: hsl(192deg 10.3% 53.72%);
+  letter-spacing: 0.1rem;
+}
+
+.stat-description-1 {
+  padding-left: 0.8rem;
+}
+
+.stat-description-2 {
+  padding-left: 3.6rem;
 }
