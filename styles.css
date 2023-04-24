@@ -89,7 +89,8 @@ header {
 
 .container {
   margin: 0 auto;
-  max-width: 130rem;
+  max-width: 120rem;
+  padding: 0 3.2rem;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -103,8 +104,8 @@ header {
   font-weight: 600;
   font-size: 1.6rem;
   border: 1px solid hsl(322, 100%, 66%);
-  border-radius: 10%;
-  padding: 0.8rem 1.2rem;
+  border-radius: 25px;
+  padding: 0.5rem 2.7rem;
   cursor: pointer;
   text-decoration: none;
 }
@@ -121,34 +122,38 @@ header {
 }
 
 .hero-description {
+  text-align: center;
   font-size: 1.6rem;
-  padding: 0 35rem;
+  padding: 0 33rem;
 }
 
 .btn {
-  display: inline-block;
   background-color: hsl(322, 100%, 66%);
   color: hsl(207, 100%, 98%);
-  padding: 1.2rem 3.6rem;
-  font-weight: 600;
-  font-size: 1.6rem;
+  padding: 2.4rem 10.8rem;
+  font-weight: 700;
+  font-size: 2rem;
   border-style: none;
-  border-radius: 10%;
+  border-radius: 50px;
   cursor: pointer;
   margin-bottom: 3rem;
   text-decoration: none;
+  margin-top: 2.4rem;
 }
 
 .statistics-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 3.2rem;
   padding-bottom: 9.6rem;
-  margin-bottom: 9.6rem;
+  margin-top: 5rem;
+  margin-bottom: 21.6rem;
 }
 
 .stat-1 {
-  padding-left: 27.4rem;
+  padding-left: 12.4rem;
   position: relative;
 }
 
@@ -159,11 +164,11 @@ header {
   height: 41px;
   position: absolute;
   top: -32px;
-  left: 277px;
+  left: 129px;
 }
 
 .stat-2 {
-  padding-left: 15rem;
+  padding-left: 14.5rem;
   position: relative;
 }
 
@@ -174,7 +179,7 @@ header {
   height: 40px;
   position: absolute;
   top: -32px;
-  left: 154px;
+  left: 148px;
 }
 
 .numbers {
@@ -218,7 +223,7 @@ header {
 .about {
   display: grid;
   grid-template-columns: 60% 40%;
-  max-width: 130rem;
+  max-width: 120rem;
   padding: 5rem 3.2rem 4.4rem;
   margin: 0 auto;
 }
@@ -273,7 +278,6 @@ header {
 }
 
 .about-section-3 {
-  padding-bottom: 9.8rem;
   background-color: hsl(207, 100%, 98%);
   z-index: 1;
   position: relative;
@@ -287,4 +291,32 @@ header {
   position: absolute;
   top: -15rem;
   z-index: -1;
+}
+
+.about-section-3::after {
+  content: "";
+  background-image: url(./images/bg-section-bottom-desktop-2.svg);
+  width: 1440px;
+  height: 139px;
+  position: absolute;
+  bottom: -13.9rem;
+  z-index: -1;
+}
+
+.cta-section {
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 16.8rem;
+  padding: 9.8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.main-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.6rem;
+  color: hsl(192, 100%, 9%);
 }
