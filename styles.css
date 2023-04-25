@@ -282,9 +282,12 @@ header {
   grid-template-columns: 40% 60%;
 }
 
-.about-section-2 .about-description {
-  grid-column: 2;
+.about-section-2 .about-img-box {
+  grid-column: 1;
   grid-row: 1;
+}
+
+.about-section-2 .about-description {
   padding-left: 13.2rem;
 }
 
@@ -359,7 +362,7 @@ footer::before {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: hsl(207, 100%, 98%);
-  padding: 9.8rem 0;
+  padding: 9.8rem 3.2rem;
 }
 
 .contact-info {
