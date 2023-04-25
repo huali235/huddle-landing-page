@@ -98,7 +98,8 @@ header {
   justify-content: center;
 }
 
-.nav-btn {
+.nav-btn:link,
+.nav-btn:visited {
   background-color: white;
   color: hsl(322, 100%, 66%);
   font-weight: 600;
@@ -108,6 +109,12 @@ header {
   padding: 0.5rem 2.7rem;
   cursor: pointer;
   text-decoration: none;
+}
+
+.nav-btn:hover,
+.nav-btn:active {
+  color: hsl(321, 100%, 78%);
+  border: 1px solid hsl(321, 100%, 78%);
 }
 
 .hero-section {
@@ -127,7 +134,8 @@ header {
   padding: 0 33rem;
 }
 
-.btn {
+.btn:link,
+.btn:visited {
   background-color: hsl(322, 100%, 66%);
   color: hsl(207, 100%, 98%);
   padding: 2.4rem 10.8rem;
@@ -139,6 +147,13 @@ header {
   margin-bottom: 3rem;
   text-decoration: none;
   margin-top: 2.4rem;
+}
+
+.btn:hover,
+.btn:active,
+.subscribe-btn:hover,
+.subscribe-btn:active {
+  background-color: hsl(321, 100%, 78%);
 }
 
 .statistics-section {
@@ -307,6 +322,7 @@ header {
   max-width: 120rem;
   margin: 0 auto;
   margin-top: 16.8rem;
+  margin-bottom: 19rem;
   padding: 9.8rem 0;
   display: flex;
   justify-content: center;
@@ -319,4 +335,132 @@ header {
   font-family: "Poppins", sans-serif;
   font-size: 3.6rem;
   color: hsl(192, 100%, 9%);
+}
+
+footer {
+  background-color: hsl(192, 100%, 9%);
+  position: relative;
+  z-index: 1;
+}
+
+footer::before {
+  content: "";
+  background-image: url(./images/bg-footer-top-desktop.svg);
+  width: 1440px;
+  height: 158px;
+  position: absolute;
+  top: -15.8rem;
+  z-index: -1;
+}
+
+.footer-container {
+  margin: 0 auto;
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: hsl(207, 100%, 98%);
+  padding: 9.8rem 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  font-size: 1.4rem;
+}
+
+.contact-description {
+  padding-right: 27rem;
+  font-weight: 600;
+}
+
+.company-number,
+.company-email {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.company-number[data-icon="phone-icon"]::before {
+  content: "";
+  background-image: url(./images/icon-phone.svg);
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+}
+
+.company-email[data-icon="email-icon"]::before {
+  content: "";
+  background-image: url(./images/icon-email.svg);
+  width: 20px;
+  height: 16px;
+  display: inline-block;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 2.6rem;
+}
+
+.facebook-icon,
+.instagram-icon,
+.twitter-icon {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+
+.facebook-icon:hover,
+.facebook-icon:active,
+.twitter-icon:hover,
+.twitter-icon:active {
+  fill: #3073ea;
+}
+
+.instagram-icon:hover,
+.instagram-icon:active {
+  fill: url(#rg);
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.newsletter-title {
+  font-size: 2.4rem;
+}
+
+.newsletter-content {
+  font-size: 1.4rem;
+  padding-right: 26rem;
+  font-weight: 600;
+}
+
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 2rem;
+  margin-top: 2.4rem;
+}
+
+.email-text-input {
+  padding: 1.2rem 9rem;
+  font-size: 1.6rem;
+}
+
+.subscribe-btn {
+  padding: 0 4rem;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-style: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
