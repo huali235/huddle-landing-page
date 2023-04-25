@@ -11,4 +11,4 @@ The designs were created to the following widths:
 
 ### Link
 
-- Solution URL: []
+- Solution URL: [https://huali235.github.io/huddle-landing-page/]
