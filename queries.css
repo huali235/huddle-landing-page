@@ -1,0 +1,161 @@
+@media (max-width: 375px) {
+  html {
+    font-size: 50%;
+  }
+
+  header {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .huddle-logo {
+    height: 3.2rem;
+  }
+
+  .hero-title {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    padding: 0 3rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.4rem 5.4rem;
+  }
+
+  .statistics-section {
+    grid-template-columns: 1fr;
+    gap: 20rem;
+  }
+
+  .stat-1 {
+    padding-left: 8.4rem;
+    position: relative;
+  }
+
+  .stat-1[data-icon="people-icon"]::before {
+    top: -38px;
+    left: 66px;
+  }
+
+  .stat-2 {
+    padding-left: 7.7rem;
+  }
+
+  .stat-2[data-icon="message-icon"]::before {
+    top: -38px;
+    left: 63px;
+  }
+
+  .about-section-1 {
+    padding-top: 4.4rem;
+    padding-bottom: 3.4rem;
+  }
+
+  .about-section-1::before {
+    background-image: url(./images/bg-section-top-mobile-1.svg);
+    width: 375px;
+    height: 112px;
+    top: -14rem;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    gap: 7.4rem;
+  }
+
+  .section-title,
+  .section-description {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-section-1 .section-description {
+    padding: 0 0.9rem;
+  }
+
+  .about-section-1 .about-img-box {
+    grid-row: 1;
+  }
+
+  .about-section-1::after {
+    background-image: url(./images/bg-section-bottom-mobile-1.svg);
+    width: 375px;
+    height: 52px;
+    bottom: -6rem;
+  }
+
+  .about-section-2 .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section-2 .about-description {
+    padding-left: 0;
+  }
+
+  .about-section-2 .section-description {
+    padding-right: 0;
+  }
+
+  .about-section-3 {
+    padding-bottom: 5.2rem;
+  }
+
+  .about-section-3::before {
+    background-image: url(./images/bg-section-top-mobile-2.svg);
+    width: 375px;
+    height: 103px;
+    top: -12.5rem;
+  }
+
+  .about-section-3 .about-img-box {
+    grid-row: 1;
+  }
+
+  .about-section-3 .section-description {
+    padding: 0 1.4rem;
+  }
+
+  .about-section-3::after {
+    background-image: url(./images/bg-section-bottom-mobile-2.svg);
+    width: 375px;
+    height: 101px;
+    bottom: -12rem;
+  }
+
+  .cta-section {
+    text-align: center;
+  }
+
+  footer::before {
+    background-image: url(./images/bg-footer-top-mobile.svg);
+    width: 375px;
+    height: 53px;
+    top: -6rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 8.8rem;
+  }
+
+  .newsletter {
+    grid-row: 1;
+  }
+
+  .newsletter-content {
+    padding-right: 9rem;
+  }
+
+  .subscribe-btn {
+    padding: 1.2rem 5rem;
+    display: inline-block;
+    margin-left: 18.6rem;
+  }
+
+  .contact-description {
+    padding-right: 7rem;
+  }
+}
